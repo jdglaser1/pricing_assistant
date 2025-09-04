@@ -1,0 +1,24 @@
+// This part of my code is all of the initial variables
+
+let productName = "Candy Bar"
+let costPerUnit = 5.99
+let basePrice = 4
+let discountRate = 0.25
+let salesTaxRate = 0.06
+let fixedMonthlyCosts = 3000
+
+
+//This part of my code is the calculated pricing 
+let discountedPrice = basePrice * (1 - discountRate).toFixed(2)
+let finalPriceWithTax = discountedPrice * (1 - salesTaxRate).toFixed(2)
+let profitPerUnit = (finalPriceWithTax - costPerUnit).toFixed(2)
+let breakEvenUnits = Math.ceil(fixedMonthlyCosts / profitPerUnit).toFixed(2)
+let isProfitablePerUnit = profitPerUnit > 0
+
+// This is the consol log part of my code where my code displays in the consol
+console.log(productName)
+console.log(discountedPrice)
+console.log(finalPriceWithTax)
+console.log(profitPerUnit)
+console.log(breakEvenUnits)
+console.log(isProfitablePerUnit)
