@@ -1,2 +1,1 @@
-# pricing_assistant
-Module 2 CCA
+This is my finished asssignment for coding challenge 2A
